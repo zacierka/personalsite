@@ -22,7 +22,9 @@ function LinkTree() {
     return (
         <div className="LinkTree">
             <h1 className='linktree-header'>EBoyClique Links</h1>
-            <button className='linktree-button' onClick={ async () => handleAuthentication(discordId)}>Authorize with {links[0].service_name}</button>
+            <button className='linktree-button' id='strava' onClick={ async () => handleAuthentication(discordId)}>
+                Authorize with {links[0].service_name}
+                </button>
         </div>
     )
 }
